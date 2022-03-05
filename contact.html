@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TP1 Desain dan Pemrograman Web</title>
+	<link rel="stylesheet" type="text/css" href="style_contact.css">
+</head>
+
+<body>
+	<div>
+		<!---bagian header-->
+		<header>
+		<a href="index.html"  style="text-decoration:none";> 
+			<img class="flower" src="lilacIcon.png" alt="header" width="200px" height="200px">
+			<h1 class="judul">Beauty Blossom</h1>
+		</a>
+		</header>
+
+		<!---bagian menu navigasi-->
+		<div class="nav">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li class="active">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<!---bagian konten-->
+		<div style="display: flex;">
+			<main>
+				<form method="post" action="./contact.html">
+					<fieldset class="content"> 
+
+        		<!-- template input form -->
+        		<label for="nama">
+        			<p class="form">Nama</p>
+        		<input 
+        			class = "input"
+                    name = "name"
+                    type = "text"
+                    placeholder = "Nama Kamu..."
+                    required = ""
+                    oninput = "this.setCustomValidity('')"
+                    oninvalid = "this.setCustomValidity('Belum diisi')" />
+                </label>
+
+        		<label for="negara">
+        			<p class="form">Asal Negara</p>
+        		<input
+                    class = "input"
+                    name = "region"
+                    type = "text"
+                    placeholder = "Asal..."
+                    required = ""
+                    oninput = "this.setCustomValidity('')"
+                    oninvalid = "this.setCustomValidity('Belum diisi')" />
+                </label>
+
+                <label for = "message">
+                    <p class = "form">Pesan</p>
+                    <textarea
+                        class = "input"
+                        name = "message"
+                        rows = 3
+                        required = ""
+                        oninput = "this.setCustomValidity('')"
+                        oninvalid = "this.setCustomValidity('Belum diisi')"
+                    ></textarea>
+                </label>
+
+        		 <input type="submit" value="Submit" />
+        		</fieldset>
+        	</form>
+			</main>
+
+			<!---bagian sidebar-->
+			<aside class="sidebar">
+				<div class="identitas">
+					<h1 style="text-align: center;">Profil Diri</h1>
+					<img src="foto.jpg" width="220px" height="300px">
+					<p><b>Nama</b>			Deva Shofa Al Fathin</p>
+					<p><b>NIM</b>  			2000793</p>
+					<p><b>Jenis Kelamin</b>	Perempuan</p>
+					<p><b>Email</b>			devasa@upi.edu</p>
+				</div>
+			</aside>
+		</div>
+		<!---bagian footer-->
+		<footer>
+			<p>Praktikum Desain dan Pemrograman Web</p>
+		</footer>
+	</div>
+</body>
+</html>
